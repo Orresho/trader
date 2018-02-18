@@ -1,0 +1,16 @@
+import { createStore, combineReducers } from 'redux';
+
+/**
+ * Create store with all the reducers and export
+ */
+export default () => {
+    const store = createStore(
+        combineReducers({
+        // reducers here
+        }),
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    )
+
+    return store;   
+}
+
