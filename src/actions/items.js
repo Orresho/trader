@@ -2,17 +2,11 @@ import * as actionType from "./actionTypes";
 import uuid from 'uuid';
 
 // Add item to the trading post
-export const addItem = ({
-    name = '',
-    description = '',
-    status = '',
-    price = '',
-    seller = '' } = {})
-    => ({
-
+export const addItem = ({ itemType = '', name = '', description = '', status = '', price = '', seller = '' } = {}) => ({
     type: actionType.ADD_ITEM,
     item: {
         id: uuid(),
+        itemType,
         name,
         description,
         status,
@@ -22,7 +16,7 @@ export const addItem = ({
 })
 
 // Remove item with the passed id
-export const removeItem = ({id} = {}) => ({
+export const removeItem = ({ id } = {}) => ({
     type: actionType.REMOVE_ITEM
 });
 
