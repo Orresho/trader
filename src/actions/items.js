@@ -4,7 +4,7 @@ import uuid from 'uuid';
 // Add item to the trading post
 export const addItem = ({ itemType = '', name = '', description = '', status = '', price = '', seller = '' } = {}) => ({
     type: actionType.ADD_ITEM,
-    item: {
+    payload: {
         id: uuid(),
         itemType,
         name,
