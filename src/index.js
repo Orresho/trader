@@ -10,8 +10,6 @@ import AppRouter from './routers/AppRouter';
 // The central application state store
 const store = configureStore();
 
-console.log(store.getState());
-
 // Provider wrapping the application
 const jsx = (
     <Provider store={store}>
