@@ -5,13 +5,7 @@ import uuid from 'uuid';
 export const addItem = ({} = {}) => ({
     type: actionType.ADD_ITEM,
     payload: {
-        id: uuid(),
-        itemType,
-        name,
-        description,
-        status,
-        price,
-        seller
+
     }
 })
 

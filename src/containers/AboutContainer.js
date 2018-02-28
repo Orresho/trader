@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
-import About from '../components/About/About';
+import About from '../components/about/About';
 import BasePage from '../containers/BasePage';
 
 class AboutContainer extends Component {
-
-    constructor(props){
-        super(props)
-    }
-
     render() {
         return (
-            <BasePage>
-                <About />
-            </BasePage>
+            <About />
         )
     }
 }
