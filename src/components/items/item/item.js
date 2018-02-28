@@ -1,10 +1,9 @@
 import React from "react";
 
-const item = (props) => {
+const item = ({item}) => (
     <div>
-        {console.log(props.item)}
-        <h1>asd</h1>
+        <h1>{item.name}</h1>
     </div>
-}
+)
 
 export default item;

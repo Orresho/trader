@@ -1,12 +1,8 @@
 import * as actionType from "./actionTypes";
-import uuid from 'uuid';
 
 // Add item to the trading post
-export const addItem = ({} = {}) => ({
+export const addItem = () => ({
     type: actionType.ADD_ITEM,
-    payload: {
-
-    }
 })
 
 // Remove item with the passed id
