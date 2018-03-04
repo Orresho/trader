@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
+import { NavLink } from "react-router-dom";
 import BasePage from './BasePage';
-import Items from '../components/items/items';
 import TradingPostNavigation from './TradingPostNavigation';
 
-class BuyContainer extends Component {
+class TradingPostContainer extends Component {
     render() {
         return (
             <BasePage>
                 <TradingPostNavigation>
-                    <h2>Here is the buy container</h2>
-                    <hr/>
-                    <Items />
-                </TradingPostNavigation>    
+                </TradingPostNavigation>
             </BasePage>
         )
     }
 }
 
-export default BuyContainer;
+export default TradingPostContainer;
