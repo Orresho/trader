@@ -1,5 +1,10 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import items from '../reducers/items';
+import { createLogger } from 'redux-logger';
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSIONS_COMPOSE__ || compose;
+
+const logger = createLogger();
 
 /**
  * Create store with all the reducers and export
@@ -10,7 +15,7 @@ export default () => {
             // reducers here
             items
         }),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+        composeEnhancers(applyMiddleware(logger))
     )
 
     return store;

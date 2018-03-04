@@ -6,6 +6,4 @@
     "emmet.triggerExpansionOnTab": true,
     "workbench.colorTheme": "Cobalt2",
     "editor.fontSize": 17,
-    "editor.lineHeight": 25,
-    "editor.letterSpacing": 0.5,
 }
