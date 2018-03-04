@@ -1,8 +1,12 @@
 import React from "react";
+import './item.css';
 
 const item = ({item}) => (
     <div>
-        <h1>{item.name}</h1>
+        <div className="single-item-container">
+            <h3>{item.car_make}</h3>
+            <p>{item.car_model}</p>
+        </div>
     </div>
 )
 
