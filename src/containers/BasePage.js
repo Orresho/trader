@@ -4,10 +4,12 @@ import Footer from '../components/footer/footer';
 
 class BasePage extends Component {
     render() {
+        const {children} = this.props;
+        
         return (
             <div>
                 <Header />
-                    
+                    {children}
                 <Footer />
             </div>
         )

@@ -9,14 +9,12 @@ import Footer from '../components/footer/footer';
 const AppRouter = () => (
     <BrowserRouter>
         <div>
-            <Header />
             <Switch>
                 <Route path="/" component={HomeContainer} exact={true} />
                 <Route path="/about" component={AboutContainer} exact={true} />
                 <Route path="/sell" component={ItemsContainer} exact={true} />
                 <Route path="/buy" />
             </Switch>
-            <Footer />
         </div>
     </BrowserRouter>
 )

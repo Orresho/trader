@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import BasePage from './BasePage';
 
 class HomeContainer extends Component {
     render(){
         return (
-            <div>
+            <BasePage>
                 <h1>This is Home Page</h1>
-            </div>
+            </BasePage>
         )
     }
 }
